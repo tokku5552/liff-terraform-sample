@@ -1,4 +1,4 @@
 module "static-page" {
-    source = "../../modules/static-page"
+  source = "../../modules/static-page"
 
 }
