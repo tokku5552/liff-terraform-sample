@@ -18,13 +18,17 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: yarn install
-      # - name: Install slidev
-      #   run: npm i -g @slidev/cli
       - name: Build
         run: yarn build --base liff-terraform-sample
+      # - name: Deploy pages
+      #   uses: crazy-max/ghaction-github-pages@v2
+      #   with:
+      #     build_dir: slidev/dist
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy pages
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          build_dir: slidev/dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: slidev/dist
