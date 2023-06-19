@@ -1,0 +1,80 @@
+name: ci.yml
+
+on:
+  pull_request:
+
+env:
+  AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_REGION: "ap-northeast-1"
+  TF_VERSION: "1.4.6"
+
+jobs:
+  tf-plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      id-token: write
+      contents: read
+      pull-requests: write
+      statuses: write
+    defaults:
+      run:
+        working-directory: ./terraform/environments
+    steps:
+      - uses: actions/checkout@v3
+      - uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+      - name: Check format
+        id: fmt
+        run: terraform fmt -check -recursive
+      - name: Init
+        run: terraform -chdir=dev init -upgrade -no-color
+      - name: Check validate
+        run: terraform -chdir=dev validate
+      - name: Plan
+        id: plan
+        run: terraform -chdir=dev plan -no-color -input=false
+  app-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./my-app
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Cache node modules
+        id: cache-my-app
+        uses: actions/cache@v3
+        with:
+          path: "**/node_modules"
+          key: cache-node-modules-${{ hashFiles('my-app/yarn.lock') }}
+      - name: Install dependencies
+        run: yarn install
+      - name: build
+        run: |
+          yarn export
+  slidev-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./slidev
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Cache node modules
+        id: cache-slidev
+        uses: actions/cache@v3
+        with:
+          path: "**/node_modules"
+          key: cache-node-modules-${{ hashFiles('slidev/yarn.lock') }}
+      - name: Install dependencies
+        run: yarn install
+      - name: Build
+        run: yarn build --base liff-terraform-sample
