@@ -1,18 +1,73 @@
 ---
 theme: purplin
-background: https://source.unsplash.com/collection/94734566/1920x1080
-class: text-center
+# layout: quote
+# position: center
+# class: text-center
 highlighter: shiki
-lineNumbers: false
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+# lineNumbers: false
+# info: |
+#   ## Slidev Starter Template
+#   Presentation slides for developers.
 
-  Learn more at [Sli.dev](https://sli.dev)
-drawings:
-  persist: false
-transition: slide-left
-title: Welcome to Slidev
+#   Learn more at [Sli.dev](https://sli.dev)
+# drawings:
+#   persist: false
+# transition: slide-left
+title: liffアプリをterraformで作ってみた
+layout: intro
+---
+
+<!--
+# Slidev Theme Purplins
+
+Presentation slides for developers
+
+<div class="pt-12">
+  <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
+    Press Space for next page <carbon:arrow-right class="inline"/>
+  </span>
+</div>
+
+<BarBottom  title="Slidev theme purplin">
+  <Item text="tokku5552/liff-terraform-sample">
+    <carbon:logo-github />
+  </Item>
+  <Item text="tokkuu">
+    <carbon:logo-twitter />
+  </Item>
+  <a href="https://tokku5552.github.io/liff-terraform-sample/">
+  <Item text="pages">
+    <carbon:link />
+  </Item>
+      </a>
+</BarBottom>
+ -->
+
+# Slidev Theme Purplin
+
+Presentation slides for developers
+
+<div class="pt-12">
+  <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-purple hover:bg-opacity-10">
+    Press Space for next page <carbon:arrow-right class="inline"/>
+  </span>
+</div>
+
+<!-- <BarBottom  title="Slidev theme purplin">
+  <Item text="slidevjs/slidev">
+    <carbon:logo-github />
+  </Item>
+  <Item text="Slidevjs">
+    <carbon:logo-twitter />
+  </Item>
+  <Item text="sli.dev">
+    <img
+      src="https://d33wubrfki0l68.cloudfront.net/273aa82ec83b3e4357492a201fb68048af1c3e6a/8f657/logo.svg"
+      class="w-4"
+    />
+  </Item>
+</BarBottom> -->
+
 ---
 
 # Welcome to Slidev

@@ -11,5 +11,8 @@
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "slidev-theme-purplin": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1"
   }
 }
