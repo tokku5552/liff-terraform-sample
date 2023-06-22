@@ -5,9 +5,9 @@ title: liffアプリをterraformで作ってみた
 layout: intro
 ---
 
-# Slidev Theme Purplin
+# liffアプリを<br/>terraformで作ってみた
 
-Presentation slides for developers
+2023-06-24 CloudTech LT: tokkuu
 
 <div class="pt-12">
   <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-purple hover:bg-opacity-10">
@@ -86,8 +86,8 @@ Here is another comment.
 -->
 
 ---
-
-## layout: default
+layout: default
+---
 
 # Table of contents
 
@@ -98,10 +98,9 @@ Here is another comment.
 <Toc></Toc>
 
 ---
-
 transition: slide-up
-
-## level: 2
+level: 2
+---
 
 # Navigation
 
@@ -127,10 +126,8 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
-
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
-
 ---
 
 # Code
