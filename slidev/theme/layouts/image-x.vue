@@ -24,7 +24,6 @@ const textAlignment = computed(() =>
 const resolvedImage = computed(() => {
   const url = import.meta.env.BASE_URL + props.image;
   const url_rep = url.replace(/\/\//g, "\/");
-  console.log(url_rep);
   return url_rep;
 });
 </script>
