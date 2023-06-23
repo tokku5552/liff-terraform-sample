@@ -25,7 +25,7 @@ layout: default
 
 ---
 layout: image-x
-image: ./public/assets/tokuda.png
+image: /tokuda.png
 ---
 
 # 自己紹介
@@ -42,9 +42,9 @@ image: ./public/assets/tokuda.png
 
 
 <ul class='flex justify-center'>
-  <li class='list-none'><img src='public/assets/lae.png' width=150 /></li>
-  <li class='list-none'><img src='public/assets/logo_transparent.png' width=100 /></li>
-  <li class='list-none'><img src='public/assets/logo_square_transparent.png' width=100 /></li>
+  <li class='list-none'><img src='/lae.png' width=150 /></li>
+  <li class='list-none'><img src='/logo_transparent.png' width=100 /></li>
+  <li class='list-none'><img src='/logo_square_transparent.png' width=100 /></li>
 </ul>
 
 ---
@@ -80,7 +80,7 @@ layout: quote
 <br/>
 
 <div class='justify-center'>
-  <img src="public/assets/this_repos.png" width="700"/>
+  <img src="/this_repos.png" width="700"/>
 </div>
 
 <arrow v-click="1" x1="600" y1="400" x2="700" y2="500" color="#811" width="3" arrowSize="1" />
@@ -88,7 +88,7 @@ layout: quote
 
 ---
 layout: image-x
-image: ./public/assets/dir.png
+image: /dir.png
 ---
 
 # ディレクトリ構成
@@ -259,7 +259,7 @@ aws cloudfront create-invalidation --distribution-id <distribution id> --paths "
 ```
 
 <br/><br/>
-<img v-click="6" src="public/assets/deploy.png" width="800">
+<img v-click="6" src="/deploy.png" width="800">
 
 ---
 
@@ -272,12 +272,12 @@ aws cloudfront create-invalidation --distribution-id <distribution id> --paths "
 
 ## 宣伝 その1
 <a href="https://podcasters.spotify.com/pod/show/5rh9uag8ah" >
-  <img src="public/assets/advertise1.png" width="800" />
+  <img src="/advertise1.png" width="800" />
 </a>
 
 --- 
 
 ## 宣伝 その2
 <a href="https://hrmos.co/pages/cyberagent-group/jobs/1833170313527164963" >
-  <img src="public/assets/advertise2.png" width="800" />
+  <img src="/advertise2.png" width="800" />
 </a>
