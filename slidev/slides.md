@@ -25,7 +25,7 @@ layout: default
 
 ---
 layout: image-x
-image: /tokuda.png
+image: ./public/tokuda.png
 ---
 
 # 自己紹介
