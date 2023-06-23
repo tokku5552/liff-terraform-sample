@@ -21,7 +21,10 @@ const textAlignment = computed(() =>
     : "text-left order-1 justify-start"
 );
 
-const resolvedImage = computed(() => import.meta.env.BASE_URL + props.image);
+const resolvedImage = computed(() => {
+  const url = import.meta.env.BASE_URL + props.image;
+  return url.replace(/\/\//g, "/");
+});
 </script>
 
 <template>

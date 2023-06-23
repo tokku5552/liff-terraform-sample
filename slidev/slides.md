@@ -25,7 +25,7 @@ layout: default
 
 ---
 layout: image-x
-image: tokuda.png
+image: /tokuda.png
 ---
 
 
@@ -89,7 +89,7 @@ layout: quote
 
 ---
 layout: image-x
-image: dir.png
+image: /dir.png
 ---
 
 <img src="/dir.png" width="0" />
