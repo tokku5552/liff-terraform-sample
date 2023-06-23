@@ -25,8 +25,10 @@ layout: default
 
 ---
 layout: image-x
-image: https://github.com/tokku5552/liff-terraform-sample/assets/69064290/61d059b6-6355-4997-b2a6-32579f4da801
+image: /tokuda.png
 ---
+
+<img src="/tokuda.png" width="0" />
 
 # 自己紹介
 
@@ -88,8 +90,10 @@ layout: quote
 
 ---
 layout: image-x
-image: https://github.com/tokku5552/liff-terraform-sample/assets/69064290/ab54e920-ab83-402f-9131-efb65dd1281f
+image: /dir.png
 ---
+
+<img src="/dir.png" width="0" />
 
 # ディレクトリ構成
 
