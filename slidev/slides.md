@@ -25,10 +25,9 @@ layout: default
 
 ---
 layout: image-x
-image: /tokuda.png
+image: tokuda.png
 ---
 
-<img src="/tokuda.png" width="0" />
 
 # 自己紹介
 
@@ -90,7 +89,7 @@ layout: quote
 
 ---
 layout: image-x
-image: /dir.png
+image: dir.png
 ---
 
 <img src="/dir.png" width="0" />

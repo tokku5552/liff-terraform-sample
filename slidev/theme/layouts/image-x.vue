@@ -20,6 +20,8 @@ const textAlignment = computed(() =>
     ? "text-right order-2 justify-end"
     : "text-left order-1 justify-start"
 );
+
+const resolvedImage = computed(() => import.meta.env.BASE_URL + props.image);
 </script>
 
 <template>
@@ -32,7 +34,7 @@ const textAlignment = computed(() =>
         :class="imageOrder"
       >
         <img
-          :src="image"
+          :src="resolvedImage"
           class="rounded-2xl border-image h-full object-cover"
         />
       </div>
