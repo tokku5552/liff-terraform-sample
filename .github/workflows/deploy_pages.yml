@@ -1,6 +1,6 @@
 name: Deploy pages
 
-on: 
+on:
   push:
     branches:
       - main
@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build
-        run: yarn build --base liff-terraform-sample
+        run: yarn build --base /liff-terraform-sample
       - name: Deploy pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
