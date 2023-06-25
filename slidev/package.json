@@ -13,6 +13,7 @@
     "slidev-theme-purplin": "^1.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.3.1"
+    "@types/node": "^20.3.1",
+    "playwright-chromium": "^1.35.1"
   }
 }
