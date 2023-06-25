@@ -278,9 +278,3 @@ aws cloudfront create-invalidation --distribution-id <distribution id> --paths "
   <img src="/advertise1.png" width="800" />
 </a>
 
---- 
-
-## 宣伝 その2
-<a href="https://hrmos.co/pages/cyberagent-group/jobs/1833170313527164963" >
-  <img src="/advertise2.png" width="800" />
-</a>
