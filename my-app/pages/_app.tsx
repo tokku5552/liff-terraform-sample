@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import type { Liff } from "@line/liff";
 import { useState, useEffect } from "react";
+import type { Liff } from "@line/liff/exports";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [liffObject, setLiffObject] = useState<Liff | null>(null);
