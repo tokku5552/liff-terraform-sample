@@ -950,9 +950,9 @@
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
 "@types/node@^20.3.1":
-  version "20.4.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.6.tgz#b66b66c9bb5d49b199f03399e341c9d6036e9e88"
-  integrity sha512-q0RkvNgMweWWIvSMDiXhflGUKMdIxBo2M2tYM/0kEGDueQByFzK4KZAgu5YHGFNxziTlppNpTIBcqHQAxlfHdA==
+  version "20.4.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.7.tgz#74d323a93f1391a63477b27b9aec56669c98b2ab"
+  integrity sha512-bUBrPjEry2QUTsnuEjzjbS7voGWCc30W0qzgMf90GPeDGFRakvrz47ju+oqDAKCXLUCe39u57/ORMl/O/04/9g==
 
 "@types/unist@^2", "@types/unist@^2.0.0":
   version "2.0.7"
@@ -974,7 +974,7 @@
   resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.17.tgz#5c9f3c617f64a9735d7b72a7cc671e166d900c40"
   integrity sha512-4p9vcSmxAayx72yn70joFoL44c9MO/0+iVEBIQXe3v2h2SiAsEIo/G5v6ObFWvNKRFjbrVadNf9LqEEZeQPzdA==
 
-"@unhead/dom@1.2.1", "@unhead/dom@^1.1.26":
+"@unhead/dom@1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.2.1.tgz#4186bc6860bf5b6f5a08dd08a1245c43c2d6cc1a"
   integrity sha512-Kjo6bJpo2RFUlhPq/fGQbUpTdfNSwbwg3vjMmqxCPcTWg87sv+a3kNnIP3c/CV0Sc34OsMY/0Melx+0BAu937g==
@@ -982,10 +982,26 @@
     "@unhead/schema" "1.2.1"
     "@unhead/shared" "1.2.1"
 
+"@unhead/dom@^1.1.26":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.2.2.tgz#b5e8a5d9ab775f85405eee5c2ae9e981de897fcc"
+  integrity sha512-ohganmg4i1Dd4wwQ2A9oLWEkJNpJRoERJNmFgzmScw9Vi3zMqoS4gPIofT20zUR5rhyyAsFojuDPojJ5vKcmqw==
+  dependencies:
+    "@unhead/schema" "1.2.2"
+    "@unhead/shared" "1.2.2"
+
 "@unhead/schema@1.2.1", "@unhead/schema@^1.1.26":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.2.1.tgz#a745e29dc5a479f06355c3ea235f31925c20bcd4"
   integrity sha512-b0NVAXqFEP2K5Tu3Zkv+MUGnwDMjetEEa8Dw4i0z4rrO3J5Kg1TCp4C+wWCx2d8M6US6yI1TE636K9ll8WophQ==
+  dependencies:
+    hookable "^5.5.3"
+    zhead "^2.0.10"
+
+"@unhead/schema@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.2.2.tgz#ae76dd94abfea9671252ad77a0d2773b657acb0f"
+  integrity sha512-cGtNvadL76eGl7QxGjWHZxFqLv9a2VrmRpeEb1d7sm0cvnN0bWngdXDTdUyXzn7RVv/Um+/yae6eiT6A+pyQOw==
   dependencies:
     hookable "^5.5.3"
     zhead "^2.0.10"
@@ -996,6 +1012,13 @@
   integrity sha512-tZa/vm2LKoaduPIaol/lQQSX1eY0YCqoktHDO+Vyc9hhoT/oqP2L9LbUjgunQysxbAPKLsgqS0rrXGP+j1fShw==
   dependencies:
     "@unhead/schema" "1.2.1"
+
+"@unhead/shared@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@unhead/shared/-/shared-1.2.2.tgz#144ed5dabfbe30659f6494948eb87b02867ac984"
+  integrity sha512-bWRjRyVzFsunih9GbHctvS8Aenj6KBe5ycql1JE4LawBL/NRYvCYUCPpdK5poVOqjYr0yDAf9m4JGaM2HwpVLw==
+  dependencies:
+    "@unhead/schema" "1.2.2"
 
 "@unhead/ssr@^1.1.26":
   version "1.2.1"
